@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+</head>
+
+<body>
+ <div >
+<center>	<h1>Predict Disease Attack on Banana</h1></center>
+<br>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form class="form-horizontal" action="{{ url_for('predict')}}"method="post">
+      <div style="border: 1px solid black;width: 600px;margin: auto;text-align:center;">   
+        <br><br>
+
+    <div class="form-group">
+      <label for="Temperature" class="control-label col-sm-4">Temperature at field</label>
+      <div class="col-sm-6">
+          <input class="form-control" placeholder="Temperature"
+                  type="text" id="Temperature" name="Temperature"/>
+      </div>
+  </div>
+
+<div class="form-group">
+  <label for="RH" class="control-label col-sm-4">Relative Humidity</label>
+  <div class="col-sm-6">
+      <input class="form-control" placeholder="Relative Humidity" name="RH"
+              type="text" id="RH" />
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="Rainfall" class="control-label col-sm-4">Rainfall</label>
+  <div class="col-sm-6">
+      <input class="form-control" placeholder="Rainfall" name="Rainfall"
+              type="text" id="Rainfall" />
+  </div>
+</div>
+<br>
+<div class="form-group">
+  <div class="col-sm-offset-1 col-sm-10">
+      <button type="submit" class="btn btn-primary">Predict</button>
+  </div>
+</div>
+<br>
+      </div>
+    </form>
+
+   <br>
+   <br>
+
+  <b><center>{{ prediction_text }}</center> </b>
+
+ </div>
+
+
+</body>
+</html>

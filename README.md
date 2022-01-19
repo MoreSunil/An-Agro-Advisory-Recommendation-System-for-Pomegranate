@@ -2,8 +2,9 @@
 # An Agro Advisory Recommendation System For Pomegranate
 
 
+# Primary Objective
 
-
+Create the image-based recommender and prediction system which helps to find the pomegranate diseases.
 
 # Dataset Used For Training
 Prepared the training dataset with help of domain experts. Here are the few imges of the traing dataset.

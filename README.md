@@ -1,14 +1,15 @@
 
-# Bacterial Blight Prediction of Pomegranate
-
-This helps to farmer to check the Pomegranate fruit is affected by
-Bacterial Blight disease or not.
+# An Agro Advisory Recommendation System For Pomegranate
 
 
 
-## Demo
-
-Here user has to upload the image to be checked. This is one of the sample image of the bacterial blight. System will give the result as it is affected by Bacterial blight or not.
 
 
-![123](https://user-images.githubusercontent.com/64839565/148693009-6211b4e5-9c73-451c-aa60-2af739bf94e1.jpg)
+# Dataset Used For Training
+Prepared the training dataset with help of domain experts. Here are the few imges of the traing dataset.
+![DatasetForRecommenderSystem](https://user-images.githubusercontent.com/64839565/150182622-bbb8aaee-fad2-48b6-874a-b04d2cd92851.png)
+
+
+
+
+
